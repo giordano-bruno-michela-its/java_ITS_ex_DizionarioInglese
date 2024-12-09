@@ -1,0 +1,46 @@
+Domanda: Qual è la traduzione di "the"?
+Risposta utente: il,lo,la,i, gli, le
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "of"?
+Risposta utente: lontano
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "to"?
+Risposta utente: a
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "and"?
+Risposta utente: porta
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "a"?
+Risposta utente: linea
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "in"?
+Risposta utente: in
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "is"?
+Risposta utente: diversi
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "it"?
+Risposta utente: piacere
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "you"?
+Risposta utente: tu
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "that"?
+Risposta utente: quello, quella
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "he"?
+Risposta utente: vicino
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "was"?
+Risposta utente: passato di be
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "for"?
+Risposta utente: per
+Esito: CORRETTO
+Domanda: Qual è la traduzione di "on"?
+Risposta utente: sicuro
+Esito: SBAGLIATO
+Domanda: Qual è la traduzione di "are"?
+Risposta utente: più
+Esito: SBAGLIATO
+Punteggio totale: 7/15

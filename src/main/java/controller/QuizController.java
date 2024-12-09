@@ -3,6 +3,7 @@ package controller;
 import model.Definizione;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class QuizController {
@@ -149,11 +150,16 @@ public class QuizController {
     }
 
     private void scriviOutput(List<String> output) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("risultati.txt"))) {
+        // Genera il nome del file basato su data e ora
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String fileName = "quiz_result_" + timestamp + ".txt";
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             for (String line : output) {
                 writer.write(line);
                 writer.newLine();
             }
+            System.out.println("Risultati salvati in: " + fileName);
         } catch (IOException e) {
             System.err.println("Errore durante la scrittura del file: " + e.getMessage());
         }
