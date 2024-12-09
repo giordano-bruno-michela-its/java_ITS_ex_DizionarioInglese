@@ -86,15 +86,28 @@ public class QuizController {
         risposteCorrette = 0;
         risposteErrate = 0;
 
-        System.out.println("== Modalità Quiz ==\n");
-        System.out.println("Digita '0' in qualsiasi momento per tornare al menu principale.");
+        System.out.println("\n== Modalità Quiz ==\n");
+        System.out.println("Digita '0' in qualsiasi momento per tornare al menu principale.\n");
         for (Definizione definizione : definizioni) {
             System.out.println("Qual è la traduzione di \"" + definizione.getVocaboloInglese() + "\"?\n");
-            List<String> opzioni = new ArrayList<>(List.of(definizione.getTraduzioneItaliana(), "opzione errata 1", "opzione errata 2"));
+            
+            List<String> opzioni = new ArrayList<>();
+            opzioni.add(definizione.getTraduzioneItaliana());
+            
+            while (opzioni.size() < 3) {
+                Definizione opzioneErrata = definizioni.get(random.nextInt(definizioni.size()));
+                if (!opzioneErrata.getTraduzioneItaliana().equals(definizione.getTraduzioneItaliana())
+                        && !opzioni.contains(opzioneErrata.getTraduzioneItaliana())) {
+                    opzioni.add(opzioneErrata.getTraduzioneItaliana());
+                }
+            }
+            
             Collections.shuffle(opzioni);
+            
             for (int i = 0; i < opzioni.size(); i++) {
                 System.out.println((i + 1) + ") " + opzioni.get(i));
             }
+
             System.out.print("\nRisposta: ");
             int risposta;
 
@@ -123,7 +136,7 @@ public class QuizController {
                 System.out.println("Corretto!\n");
             } else {
                 risposteErrate++;
-                System.out.println("Sbagliato!");
+                System.out.println("Sbagliato!\n");
             }
             System.out.println("Risposte corrette: " + risposteCorrette + ", Risposte sbagliate: " + risposteErrate);
             System.out.println("Digita '0' in qualsiasi momento per tornare al menu principale.\n");
