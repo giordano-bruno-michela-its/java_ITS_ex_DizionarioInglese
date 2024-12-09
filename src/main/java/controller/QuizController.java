@@ -143,7 +143,7 @@ public class QuizController {
             System.out.println("Digita '0' in qualsiasi momento per tornare al menu principale.\n");
             output.add("Domanda: Qual è la traduzione di \"" + definizione.getVocaboloInglese() + "\"?");
             output.add("Risposta utente: " + opzioni.get(risposta - 1));
-            output.add("Esito: " + (corretto ? "CORRETTO" : "SBAGLIATO"));
+            output.add("Esito: " + (corretto ? "CORRETTO\n" : "SBAGLIATO\n"));
         }
         output.add("Punteggio totale: " + risposteCorrette + "/" + (risposteCorrette + risposteErrate));
         scriviOutput(output);
