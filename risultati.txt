@@ -1,0 +1,4 @@
+Domanda: Qual è la traduzione di "the"?
+Risposta utente: il,lo,la,i, gli, le
+Esito: CORRETTO
+Punteggio totale: 1/1
