@@ -1,0 +1,33 @@
+Domanda: Qual è la traduzione di "the"?
+Risposta utente: il,lo,la,i, gli, le
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "of"?
+Risposta utente: di, dei
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "to"?
+Risposta utente: a
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "and"?
+Risposta utente: e
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "a"?
+Risposta utente: un, uno, una
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "in"?
+Risposta utente: in
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "is"?
+Risposta utente: è
+Esito: CORRETTO
+
+Domanda: Qual è la traduzione di "it"?
+Risposta utente: lo, la, questo
+Esito: CORRETTO
+
+Punteggio totale: 8/8
