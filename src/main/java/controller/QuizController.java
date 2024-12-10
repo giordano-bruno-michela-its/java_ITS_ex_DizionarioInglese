@@ -121,7 +121,7 @@ public class QuizController {
             }
 
             if (risposta == 0) {
-                System.out.println("Tornando al menu principale...");
+                System.out.println("Ritorno al menu principale...");
                 break;
             }
 
@@ -150,7 +150,6 @@ public class QuizController {
     }
 
     private void scriviOutput(List<String> output) {
-        // Genera il nome del file basato su data e ora
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String fileName = "quiz_result_" + timestamp + ".txt";
 
