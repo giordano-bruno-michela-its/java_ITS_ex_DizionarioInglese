@@ -22,7 +22,7 @@ public class QuizController {
             if (reader == null) {
                 throw new FileNotFoundException("File non trovato: " + filePath);
             }
-            reader.readLine();
+            reader.readLine(); // Ignora gli header
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\t");
@@ -150,6 +150,7 @@ public class QuizController {
     }
 
     private void scriviOutput(List<String> output) {
+        // Scrive i risultati del quiz su un file di testo con timestamp
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String fileName = "quiz_result_" + timestamp + ".txt";
 
